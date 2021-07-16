@@ -1,0 +1,45 @@
+{
+    "manifestVersion": 1,
+    "id": "aft-pipeline-task",
+    "publisher": "AlgomediInformationTechnologies",
+    "version": "1.0.0.3",
+    "name": "Aft Pipeline Task",
+    "description": "Aft Pipeline Task",
+    "public": false,
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "images/apple-icon-120x120.png"        
+    },
+    "files": [
+        {
+            "path": "buildAndReleaseTask"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "aft-pipeline-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildandreleasetask"
+            }
+        }
+    ],
+    "demands": {
+        "type": "array",
+        "description": "Allows you to define a list of demands that a build agent requires to run this build task.",
+        "items": {
+          "type": "string"
+        }
+      }
+    
+}

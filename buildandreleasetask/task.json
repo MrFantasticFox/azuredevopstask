@@ -1,0 +1,46 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+    "id": "f1bf5765-0786-4182-870b-8ff5b2331a77",
+    "name": "AftTask",
+    "friendlyName": "Aft Task",
+    "description": "Aft Task",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "Fatih Güner",
+    "version": {
+        "Major": 0,
+        "Minor": 1,
+        "Patch": 0
+    },
+    "inputs": [
+        {
+            "name": "command",
+            "type": "pickList",
+            "label": "Command",
+            "defaultValue": "",
+            "required": true,
+            "options": {
+                "translate": "translate"
+            }
+        },
+        {
+            "name": "projectPath",
+            "type": "filePath",
+            "label": "Project Path",
+            "required": true,
+            "defaultValue": ""
+        }
+    ],
+    "execution": {
+        "Node10": {
+            "target": "index.js"
+        },
+        "PowerShell3": {
+            "target": "index.ps1",
+            "platforms": [
+                "windows"
+            ]
+        }
+    }
+    
+}

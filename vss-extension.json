@@ -1,10 +1,10 @@
 {
     "manifestVersion": 1,
-    "id": "aft-pipeline-task",
+    "id": "demo-pipeline-task",
     "publisher": "AlgomediInformationTechnologies",
     "version": "1.0.0.3",
-    "name": "Aft Pipeline Task",
-    "description": "Aft Pipeline Task",
+    "name": "Demo Pipeline Task",
+    "description": "Demo Pipeline Task",
     "public": false,
     "targets": [
         {
@@ -15,7 +15,7 @@
         "Azure Pipelines"
     ],
     "icons": {
-        "default": "images/apple-icon-120x120.png"        
+        "default": "images/icon.png"        
     },
     "files": [
         {

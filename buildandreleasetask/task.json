@@ -1,9 +1,9 @@
 {
     "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
     "id": "f1bf5765-0786-4182-870b-8ff5b2331a77",
-    "name": "AftTask",
-    "friendlyName": "Aft Task",
-    "description": "Aft Task",
+    "name": "DemoTask",
+    "friendlyName": "DemoTask",
+    "description": "DemoTask",
     "helpMarkDown": "",
     "category": "Utility",
     "author": "Fatih Güner",
